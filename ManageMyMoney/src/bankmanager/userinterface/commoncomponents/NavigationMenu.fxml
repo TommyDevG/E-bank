@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="25.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankmanager.userinterface.commoncomponents.NavigationMenuController">
+   <children>
+      <MenuBar fx:id="menuBar" prefHeight="28.0" prefWidth="603.0">
+         <menus>
+            <Menu fx:id="homeTab" mnemonicParsing="false" onAction="#setHomeView" text="Accueil" />
+            <Menu fx:id="getFileTab" mnemonicParsing="false" onAction="#setFileView" text="Récupérer fichier" />
+            <Menu fx:id="getOperationsTab" mnemonicParsing="false" onAction="#setOperationsView" text="Mes opérations" />
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

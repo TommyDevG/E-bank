@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankmanager.userinterface.view.recoveroperations.RecoverFileController">
+   <children>
+      <Button fx:id="buttonRetrieveFiles" layoutX="241.0" layoutY="124.0" mnemonicParsing="false" onAction="#getFiles" text="Récupérer fichier(s)" />
+      <Label fx:id="labelFileName" alignment="CENTER" layoutX="221.0" layoutY="184.0" prefHeight="33.0" prefWidth="158.0" text="Aucun fichier sélectionné" />
+      <Button fx:id="buttonProcessFiles" layoutX="239.0" layoutY="255.0" mnemonicParsing="false" onAction="#processFiles" text="Traiter le(s) fichier(s)" />
+   </children>
+</AnchorPane>

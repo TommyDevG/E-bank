@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankmanager.userinterface.view.checkoperation.CheckOperationController">
+   <children>
+      <TableView fx:id="tableListOperation" layoutX="14.0" layoutY="62.0" prefHeight="289.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="columLibelle" prefWidth="285.0" text="Libellé" />
+          <TableColumn fx:id="columDate" minWidth="0.0" prefWidth="102.0" text="Date" />
+            <TableColumn fx:id="columDebit" prefWidth="100.0" text="Débit" />
+            <TableColumn fx:id="columCredit" prefWidth="84.0" text="Crédit" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonSaveOperation" layoutX="410.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveOperation" text="Sauvegarder mes opérations" />
+      <Button fx:id="buttonCancel" layoutX="338.0" layoutY="361.0" mnemonicParsing="false" onAction="#closeWindow" text="Annuler" />
+      <Label layoutX="69.0" layoutY="14.0" text="Opérations récupérées depuis le(s) fichier(s)">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
